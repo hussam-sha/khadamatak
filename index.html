@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خدماتك السودانية</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #008060;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #f0f0f0;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #008060;
+      font-weight: bold;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .service, .about, .gallery, .testimonials, .contact {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, select, textarea {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #008060;
+      color: white;
+      padding: 0.7rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
+    }
+    img.sample {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+    .testimonial {
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem 0;
+    }
+    .testimonial:last-child {
+      border-bottom: none;
+    }
+    .testimonial-form {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>خدماتك السودانية</h1>
+    <p>منصة لتقديم الخدمات الرقمية بسرعة وسهولة</p>
+  </header>
+  <nav>
+    <a href="#services">الخدمات</a>
+    <a href="#about">من نحن</a>
+    <a href="#gallery">نماذج أعمال</a>
+    <a href="#testimonials">آراء العملاء</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+  <div class="container">
+    <div class="service" id="services">
+      <h2>تصميم سيرة ذاتية احترافية</h2>
+      <p>نقوم بتصميم سيرتك الذاتية بصيغة PDF و Word باللغة العربية أو الإنجليزية.</p>
+      <p><strong>السعر:</strong> 5,000 SDG</p>
+    </div>
+
+    <div class="service">
+      <h2>نموذج طلب الخدمة</h2>
+      <form id="orderForm">
+        <label>الاسم الكامل:</label>
+        <input type="text" id="name" required>
+
+        <label>رقم الواتساب:</label>
+        <input type="text" id="whatsapp" required>
+
+        <label>اختيار الخدمة:</label>
+        <select id="service">
+          <option>تصميم سيرة ذاتية</option>
+          <option>فتح حساب بنكي</option>
+          <option>ترجمة وثائق</option>
+        </select>
+
+        <label>تفاصيل إضافية:</label>
+        <textarea id="details" rows="4"></textarea>
+
+        <button type="submit">إرسال الطلب عبر واتساب</button>
+      </form>
+    </div>
+
+    <div class="service">
+      <h2>معلومات الدفع</h2>
+      <p>يمكنك الدفع عبر:</p>
+      <ul>
+        <li><strong>بنكك:</strong> 123456789</li>
+        <li><strong>MTN:</strong> 0999123456</li>
+        <li><strong>واتساب:</strong> 00249999927844 للتأكيد</li>
+      </ul>
+    </div>
+
+    <div class="about" id="about">
+      <h2>من نحن</h2>
+      <p>نحن فريق سوداني متخصص في تقديم الخدمات الرقمية مثل تصميم السيرة الذاتية، التقديم للوظائف، فتح الحسابات البنكية، والترجمة. نعمل على تسهيل الوصول للخدمات باحترافية وسرعة.</p>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <h2>نماذج من أعمالنا</h2>
+      <img src="sample_cv1.jpg" alt="نموذج سيرة ذاتية" class="sample">
+      <img src="sample_cv2.jpg" alt="نموذج سيرة ذاتية" class="sample">
+      <p>هذه بعض الأمثلة من التصاميم التي قدمناها للعملاء. يمكنك طلب تصميم مخصص حسب المجال.</p>
+    </div>
+
+    <div class="testimonials" id="testimonials">
+      <h2>آراء العملاء</h2>
+      <div class="testimonial">
+        <p><strong>أحمد عبد الله:</strong> خدمة ممتازة وسريعة. حصلت على سيرة ذاتية جذابة خلال يوم واحد فقط!</p>
+      </div>
+      <div class="testimonial">
+        <p><strong>سلمى محمد:</strong> فريق محترف وتعامل راقٍ. أنصح أي شخص بخدماتهم.</p>
+      </div>
+      <div class="testimonial">
+        <p><strong>محمد خالد:</strong> تم فتح حساب بنكي لي بسهولة وبمساعدة كاملة من الفريق.</p>
+      </div>
+      <div class="testimonial-form">
+        <h3>أضف تقييمك</h3>
+        <form id="reviewForm">
+          <label>اسمك:</label>
+          <input type="text" id="reviewerName" required>
+
+          <label>رأيك:</label>
+          <textarea id="reviewText" rows="3" required></textarea>
+
+          <button type="submit">إرسال عبر واتساب</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <h2>تواصل معنا</h2>
+      <form id="contactForm">
+        <label>اسمك:</label>
+        <input type="text" id="contactName" required>
+
+        <label>بريدك الإلكتروني (اختياري):</label>
+        <input type="email" id="contactEmail">
+
+        <label>رسالتك:</label>
+        <textarea id="contactMessage" rows="4" required></textarea>
+
+        <button type="submit">إرسال الاستفسار عبر واتساب</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 خدماتك السودانية. جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const whatsapp = document.getElementById('whatsapp').value;
+      const service = document.getElementById('service').value;
+      const details = document.getElementById('details').value;
+      const message = `طلب خدمة:%0Aالاسم: ${name}%0Aرقم الواتساب: ${whatsapp}%0Aالخدمة: ${service}%0Aتفاصيل: ${details}`;
+      const url = `https://wa.me/00249999927844?text=${message}`;
+      window.open(url, '_blank');
+    });
+
+    document.getElementById('reviewForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const reviewerName = document.getElementById('reviewerName').value;
+      const reviewText = document.getElementById('reviewText').value;
+      const message = `تقييم جديد:%0Aالاسم: ${reviewerName}%0Aالرأي: ${reviewText}`;
+      const url = `https://wa.me/00249999927844?text=${message}`;
+      window.open(url, '_blank');
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const contactName = document.getElementById('contactName').value;
+      const contactEmail = document.getElementById('contactEmail').value;
+      const contactMessage = document.getElementById('contactMessage').value;
+      const message = `استفسار جديد:%0Aالاسم: ${contactName}%0Aالبريد: ${contactEmail || 'غير مذكور'}%0Aالرسالة: ${contactMessage}`;
+      const url = `https://wa.me/00249999927844?text=${message}`;
+      window.open(url, '_blank');
+    });
+  </script>
+</body>
+</html>
